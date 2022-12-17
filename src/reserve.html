@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project inf 231</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- header section start -->
+<header>
+  <h1>Leroy Restaraunt</h1>
+
+  <nav class="navbar">
+    <a href="index.html">home</a>
+    <a href="index.html#team">our team</a>
+    <a href="menu.html">our menu</a>
+    <a href="locations.html">locations</a>
+    <a href="reserve.html">reserve a table</a>
+    <a href="news.html">news</a>
+  </nav>
+
+  <div class="icons">
+    <i class="fas fa-bars" id="menu"></i>
+  </div>
+</header>
+<!-- header section end -->
+
+<!-- reservation section start -->
+<div class="reservation" id="reservation">
+  <div class="form">
+    <h1 class="heading">book a table</h1>
+    <form>
+      <div class="form-holder">
+        <div>
+          <select>
+            <option>1 person</option>
+            <option>2 persons</option>
+            <option>3 persons</option>
+            <option>4 persons</option>
+          </select>
+
+          <input type="text" name="" placeholder="Time">
+          <input type="text" name="" placeholder="Phone">
+        </div>
+
+        <div>
+          <input type="text" name="" placeholder="Date">
+          <input type="text" name="" placeholder="Name">
+          <input type="email" name="" placeholder="email">
+        </div>
+      </div>
+      <center><a href="index.html">Book now</a></center>
+    </form>
+  </div>
+</div>
+<!-- reservation section end -->
+
+
+<!-- footer st-->
+<section class="footer">
+  <div class="container">
+    <div>
+      <h3>ABOUT US</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    </div>
+
+    <div>
+      <h3>Our Social Media</h3>
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>CONTACT US</h3>
+      <span>Leroy Restaurant</span>
+      <span>+ (707) 7777777</span>
+      <span>developer@gmail.com</span>
+      <span>www.leroyrest.com</span>
+    </div>
+  </div>
+</section>
+<!-- footer end -->
+
+<!-- jump to top -->
+
+<a href="#"><button class="topbtn"><i class="fa-solid fa-angle-up"></i></button></a>
+
+<script type="text/javascript">
+  let menu = document.querySelector('#menu');
+  let navbar = document.querySelector('.navbar');
+
+  menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+  }
+</script>
+</body>
+</html>
